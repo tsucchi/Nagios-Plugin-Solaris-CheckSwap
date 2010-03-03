@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use Nagios::Plugin;
 
-our $VERSION = "0.001";
+our $VERSION = "0.01";
 use 5.008;
 
 =head1 NAME
@@ -39,7 +39,7 @@ sub new {
         np => Nagios::Plugin->new(
             shortname => 'check_swap',
             usage => "Usage: %s [ -v|--verbose ]  [-H <host>] [-t <timeout>]"
-                   . "[ -c|--critical=<threshold> ] [ -w|--warning=<threshold> ]",
+                   . "[ -c|--critical=<threshold>% ] [ -w|--warning=<threshold>% ]",
         ),
         swap  => $option{swap} || '/usr/sbin/swap',
     };
