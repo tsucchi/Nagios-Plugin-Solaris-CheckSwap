@@ -62,7 +62,7 @@ sub new {
 
 =head2 run
 
-start checking raid status
+start checking swap status
 
 =cut
 
