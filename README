@@ -1,0 +1,17 @@
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+
+
+copy script/check_swap into Nagios plugin directory
+
+ex)
+cp script/check_swap /usr/local/nagios/libexec/check_swap
+chmod +x /usr/local/nagios/libexec/check_swap
+

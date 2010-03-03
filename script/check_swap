@@ -1,0 +1,7 @@
+#!/usr/bin/perl -w
+use strict;
+use warnings;
+
+use Nagios::Plugin::Solaris::CheckSwap;
+my $c = Nagios::Plugin::Solaris::CheckSwap->new();
+$c->run();
