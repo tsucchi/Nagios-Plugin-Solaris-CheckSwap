@@ -7,4 +7,7 @@ all_from       'lib/Nagios/Plugin/Solaris/CheckSwap.pm';
 author_tests   'xt';
 test_requires  'Test::More'  => '0.88';   # want to use done_testing()
 requires       'Nagios::Plugin';
-WriteAll;
+install_script 'check_swap';
+WriteMakefile(
+    INSTALLSITESCRIPT        => '/usr/local/nagios/libexec',
+);

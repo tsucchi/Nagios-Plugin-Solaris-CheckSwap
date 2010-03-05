@@ -9,9 +9,10 @@ To install this module type the following:
 
 
 
-copy script/check_swap into Nagios plugin directory
+by default, script/check_swap is installed in /usr/local/nagios/libexec
 
-ex)
-cp script/check_swap /usr/local/nagios/libexec/check_swap
-chmod +x /usr/local/nagios/libexec/check_swap
+If you want to install script to other directory, configure INSTALLSITESCRIPT like following,
 
+  perl Makefile.PL INSTALLSITESCRIPT=/usr/local/nagios3.0/plugins
+
+script is installed in INSTALLSITESCRIPT directory that you specified.
