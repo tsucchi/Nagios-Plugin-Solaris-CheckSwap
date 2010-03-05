@@ -9,7 +9,7 @@ To install this module type the following:
 
 
 
-by default, script/check_swap is installed in /usr/local/nagios/libexec
+by default, script is installed in /usr/local/nagios/libexec
 
 If you want to install script to other directory, configure INSTALLSITESCRIPT like following,
 
