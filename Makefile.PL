@@ -13,6 +13,8 @@ author_requires 'Test::Module::Used' => '0.1.4';
 author_requires 'Test::Script';
 
 test_requires  'Test::More'  => '0.88';   # want to use done_testing()
+test_requires  'Test::Mock::ExternalCommand';
+
 requires       'Nagios::Plugin';
 install_script 'check_swap';
 WriteMakefile(
