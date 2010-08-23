@@ -122,7 +122,7 @@ sub _exec_swap_l {
     my $self = shift;
     if ( !defined $self->{swap_result} ) {
         my $swap = $self->{swap};
-        $self->{np}->nagios_exit(UNKNOWN, 'swap command not found') if ( !defined $swap || !-x $swap );
+        $self->{np}->nagios_exit(UNKNOWN, 'swap command not found') if ( !defined $swap );
         my $result = `$swap -l`;
         $self->{swap_result} = $result;
     }
